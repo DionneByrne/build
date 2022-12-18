@@ -1,5 +1,5 @@
     node {
-        var dionnesimage
+        def dionnesimage
 
         stage ('build image'){
             dionnesimage = docker.build("DionneByrne/build")
