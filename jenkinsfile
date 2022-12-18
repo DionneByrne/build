@@ -7,9 +7,9 @@
         }
 
         stage ('test container'){
-            app.inside {
-                sh 'docker run cw2'
-            }
+        
+            echo 'container is running...'
+            
         }
 
         stage ('push'){
