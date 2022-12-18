@@ -1,3 +1,1 @@
-sshagent(['dionnebyrne']) {
-    sh 'scp /Users/exampleUser/home/aws/listDProcessesNativeStacks.sh ubuntu@3.236.126.74'
-}
+
