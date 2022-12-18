@@ -13,7 +13,9 @@
         }
 
         stage ('push image'){
-            dionnesimage.push("currentbuild")
+            withDockerRegistry([ credentialsId: "dionnebyrne", url: "" ]) {
+                dionnesimage.push("currentbuild")
+        }
 
         }
     }
