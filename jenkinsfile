@@ -1,9 +1,6 @@
-pipeline {
-
-}
     node {
         var dionnesimage
-        
+
         stage ('build image'){
             dionnesimage = docker.build("DionneByrne/build")
         }
