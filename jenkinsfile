@@ -13,7 +13,8 @@
         }
 
         stage ('push image'){
-            dionnesimage.push("current build")
+            dionnesimage.push("currentbuild")
+
         }
     }
     
