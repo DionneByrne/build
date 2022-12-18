@@ -6,8 +6,10 @@
             dionnesimage = docker.build("dionnebyrne/cw2")
         }
 
-        stage ('test'){
-            
+        stage ('test container'){
+            app.inside {
+                sh 'docker run cw2'
+            }
         }
 
         stage ('push'){
