@@ -13,8 +13,8 @@
         }
 
         stage ('push image'){
-            withDockerRegistry([ credentialsId: "dionnebyrne", url: "" ]) {
-                dionnebyrne.push("currentbuild")
+            withDockerRegistry([ credentialsId: "dockerlogin", url: "" ]) {
+                dionnesimage.push("currentbuild")
         }
 
         }
