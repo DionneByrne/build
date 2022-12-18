@@ -9,7 +9,7 @@
         stage ('test container'){
         
             echo 'container is running...'
-            curl http://localhost:8080/
+            curl 'http://localhost:8080/'
             
         }
 
