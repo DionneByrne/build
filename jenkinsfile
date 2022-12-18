@@ -2,6 +2,7 @@
         def dionnesimage
 
         stage ('build image'){
+            checkout scm
             dionnesimage = docker.build("dionnebyrne/cw2")
         }
 
