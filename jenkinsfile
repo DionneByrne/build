@@ -1,1 +1,16 @@
+pipeline {
+    node {
+        stage ('build image'){
+            dionnesimage = docker.build("DionneByrne/build")
+        }
 
+        stage ('test'){
+            
+        }
+
+        stage ('push'){
+            
+        }
+    }
+    
+}
